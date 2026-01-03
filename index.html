@@ -2329,6 +2329,21 @@
               </div>
             </div>
           </div>
+          <audio id="bgmusic" loop>
+            <source src="" type="audio/mpg">
+          </audio>
+          <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const link = document.querySelector("#image01 a");
+    const music = document.getElementById("bgMusic");
+
+    link.addEventListener("click", function () {
+      music.play();
+    });
+  });
+</script>
+
+            
         </section>
         <section id="satu-section">
           <div id="container03" data-scroll-id="scrollpoint02" data-scroll-behavior="default" data-scroll-offset="0"
